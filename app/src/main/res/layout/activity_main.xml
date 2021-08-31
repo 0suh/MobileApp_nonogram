@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <GridView
+                android:id="@+id/gridview1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="#bbc1c7"
+               />
+
+            <GridView
+                android:id="@+id/gridview2"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#bbc1c7"
+                android:numColumns="20" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridView
+                android:id="@+id/gridview3"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#bbc1c7"
+                android:numColumns="4" />
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#bbc1c7"
+                android:numColumns="20" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gallery"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
